@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <script src="https://kit.fontawesome.com/7763de6445.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body>
+
+        <nav class="navigation">
+          <div class="nav-left">
+            <span><a href="{% url 'home' %}">Koduri-Blog</a></span>            <ul>
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'blog_list' %}">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-right">
+            <h3><a>Hi Buddy Welcome</a></h3>
+              
+            </div>
+        </nav>
+
+        {% block content %}
+
+        {% endblock %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+      </div>
+      
+<footer class="footer">
+  <div class="foot-left">
+      <ul>
+        <li><a href="{% url 'home' %}">Home </a></li>
+        <li><a href="{% url 'blog_list' %}">Blog</a></li>
+
+      </ul>
+</div>
+
+
+    <div class="social-right" >
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-regular fa-envelope"></i>
+           <p>Mail-us: rakeshkoduri88@gmail.com</p>
+           <br>
+          <p>Copy right &copy; Rakesh Koduri</p>
+        </div>
+        
+
+</footer>
+
+</body>
+</html>
+

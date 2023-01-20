@@ -1,0 +1,37 @@
+.header{
+    margin-top: 20px;
+        
+}
+.header h3{
+    text-align: center;
+    align-content: flex-end;
+    
+}
+h2{   
+        text-align: center;
+    align-content: flex-end;
+    
+    }
+  
+img{
+width: 200px;
+height: 200px;
+border-radius: 15px;
+margin:20px;
+border: 1px solid black;
+}
+
+.container{
+    display:flex;
+    margin-top: 130px;
+    padding-left: 10%;
+    text-align: left;
+    width: 50%;
+    margin-left: 200px;
+    box-shadow: 5px 10px;
+    background-color: coral;
+    color: rgb(25, 35, 24);
+
+
+
+}

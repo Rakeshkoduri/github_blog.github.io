@@ -1,0 +1,29 @@
+{% extends 'blog/base.html'%}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/blog_list.css' %}">
+
+
+{% for blog in blogs %}
+
+<div class="container-1">
+    
+    <h3>Post: {{ blog.title }}</h3>
+
+    <h4><b>Product : {{blog.product }}</h4>
+
+    <h4>Content :</h4>
+    <small>{{blog.content }}</small>
+
+    <small>Date: {{ blog.created }}</small><br><br>
+
+   <h4>Link:    <a href="{{blog.link}}"  target="_blank" class="btn btn-primary">{{blog.link}} !</a></h4>
+          
+    <br>
+    <a href="{% url 'blog_detail' blog.pk %}">Read More</a>
+    <hr>
+
+</div>
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+
+.container-1{
+    margin-top: 40px;
+    padding-left: 10%;
+display:block;
+text-align: left;
+box-shadow: 30px;
+color: rgb(144, 62, 62);
+background-color: hsla(89, 43%, 51%, 0.3);
+margin-left: 30px;
+margin-right: 300px;
+box-shadow: seagreen 5px 10px;
+}
